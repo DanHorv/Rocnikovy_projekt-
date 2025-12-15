@@ -10,5 +10,6 @@ Zakladní program pro fungovaní bota
 vytvoření server na fungování bota 
 vytvoření samotného bota 
 offline režim
+
 ToDo: ❌
 pokročilá logika bota

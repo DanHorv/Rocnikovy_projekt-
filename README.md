@@ -6,10 +6,14 @@ Můj ročnikový projekt se zabývá ohledně discord bota který pomáhá story
 smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více podtavami 
 
 DONE:✅
+
 Zakladní program pro fungovaní bota 
+
 vytvoření server na fungování bota 
+
 vytvoření samotného bota 
+
 offline režim
 
 ToDo: ❌
-pokročilá logika bota
+pokročilá logika bota u rolí 

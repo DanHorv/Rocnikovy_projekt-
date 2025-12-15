@@ -18,3 +18,6 @@ offline režim
 ToDo: ❌
 
 pokročilá logika bota u rolí 
+
+
+( kód od bota mám připravený a ready ale bohužel nemám stále vlastní notebook, a telefon mi nedovoluje stáhnout python soubory atd.) 

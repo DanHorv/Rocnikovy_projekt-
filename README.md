@@ -1,11 +1,11 @@
-# Rocnikovy_projekt-
+# Rocnikovy_projekt
 Discord Bot na hru Blood of the clocktower
 
-Můj ročnikový projekt se zabývá ohledně discord bota který pomáhá story tellerovi při rozdělování postav, obeznámení všech o postavách a co je jich cílem ve hře," ukádaní lidí do postelí na noc" a znovu potom dostaní lidí zpět do roomky, určování pauzy a opět vrácení všech do jedné roomky.
+Můj ročnikový projekt se zabývá ohledně discord bota který pomáhá story tellerovi(ST) při rozdělování postav, obeznámení všech o postavách a co je jich cílem ve hře," ukádaní lidí do postelí na noc" a znovu potom dostaní lidí zpět do roomky, určování pauzy a opět vrácení všech do jedné roomky.
 
 celý bot je napsaný v pythonu 
 
-smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více podtavami 
+smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více podtavam, hra je udělená pro 5-13 hráčů plus ST
 
 DONE:✅
 
@@ -20,6 +20,10 @@ offline režim
 ToDo: ❌
 
 pokročilá logika bota u rolí 
+
+dodělat server 
+
+otestování bota ( 5 lidí minimálně je potřeba pro hru )
 
 zdroje: 
 

@@ -16,4 +16,5 @@ vytvoření samotného bota
 offline režim
 
 ToDo: ❌
+
 pokročilá logika bota u rolí 

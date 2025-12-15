@@ -3,6 +3,8 @@ Discord Bot na hru Blood of the clocktower
 
 Můj ročnikový projekt se zabývá ohledně discord bota který pomáhá story tellerovi při rozdělování postav, obeznámení všech o postavách a co je jich cílem ve hře," ukádaní lidí do postelí na noc" a znovu potom dostaní lidí zpět do roomky, určování pauzy a opět vrácení všech do jedné roomky.
 
+celý bot je napsaný v pythonu 
+
 smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více podtavami 
 
 DONE:✅
@@ -19,5 +21,12 @@ ToDo: ❌
 
 pokročilá logika bota u rolí 
 
+zdroje: 
+
+GEMINI( pomoc při programování) 
+
+https://discordpy.readthedocs.io/en/stable/#
+
+https://youtu.be/YD_N6Ffoojw?si=WwVKyvwSi3MbxN8j
 
 ( kód od bota mám připravený a ready ale bohužel nemám stále vlastní notebook, a telefon mi nedovoluje stáhnout python soubory atd.) 

@@ -27,7 +27,7 @@ otestování bota ( 5 lidí minimálně je potřeba pro hru )
 
 zdroje: 
 
-GEMINI( pomoc při programování) 
+GEMINI
 
 https://discordpy.readthedocs.io/en/stable/#
 

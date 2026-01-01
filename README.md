@@ -5,32 +5,12 @@ Můj ročnikový projekt se zabývá ohledně discord bota který pomáhá story
 
 celý bot je napsaný v pythonu 
 
-smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více podtavam, hra je udělená pro 5-13 hráčů plus ST
+smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více postavami, hra je udělená pro 5-15 hráčů plus ST
 
-DONE:✅
 
-Zakladní program pro fungovaní bota 
-
-vytvoření server na fungování bota 
-
-vytvoření samotného bota 
-
-offline režim
-
-ToDo: ❌
-
-pokročilá logika bota u rolí 
-
-dodělat server 
-
-otestování bota ( 5 lidí minimálně je potřeba pro hru )
 
 zdroje: 
-
+Nápad jsem ukradl kamarádovi který vytvořil podobnou verzi tohoto bota, Dík Frankie xD
 GEMINI
-
 https://discordpy.readthedocs.io/en/stable/#
-
 https://youtu.be/YD_N6Ffoojw?si=WwVKyvwSi3MbxN8j
-
-( kód od bota mám připravený a ready ale bohužel nemám stále vlastní notebook, a telefon mi nedovoluje stáhnout python soubory atd.) 

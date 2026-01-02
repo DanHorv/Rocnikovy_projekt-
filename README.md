@@ -42,6 +42,7 @@ Minihra:
 
 
 zdroje: 
+
 Nápad jsem ukradl kamarádovi který vytvořil podobnou verzi tohoto bota, Dík Frankie xD
 
 GEMINI

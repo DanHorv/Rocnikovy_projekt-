@@ -365,9 +365,6 @@ async def offline_rozpis(ctx, player_count: int):
     except Exception as e:
         await ctx.send(f"Chyba při posílání DM s rozpisem: {e}")
 
-@bot.command(name="nate_higgers")
-async def command_cc(ctx):
-    await ctx.send("hate niggers")
 
 
 @bot.command(name="cislo")
@@ -390,6 +387,7 @@ async def command_cislo(ctx):
         await ctx.send("správná odpověď! 🎉")
     else:
         await ctx.send(f"špatně, číslo bylo {spravne_cislo}")
+
 
 
 bot.run(token)

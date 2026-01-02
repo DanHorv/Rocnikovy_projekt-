@@ -23,6 +23,7 @@ How to start:
 7. Teď už stačí zapnout Bota a sehnat kamarády :D
 
 Komandy : 
+
 !Role ( dá ti roli storytellera, storyteller dokáže zapnout online hru )
 
 !starthry !startgame !start ( zapne hru pro všechny lidi kteří jsou v hlavní channelu a rozděli je do vlastních roomek "postelí" přičemž jim zašle co jsou za roli, co dělají a jaký mají cíl hry ) 

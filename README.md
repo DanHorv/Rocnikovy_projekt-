@@ -7,6 +7,8 @@ celý bot je napsaný v v pycharmu
 
 smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více postavami, hra je udělená pro 5-15 hráčů plus ST
 
+Celý kód by měl být blbuvzdorný takže by bot nikdy neměl spadnout 
+
 How to start:
 1. Je potřeba si stáhnout "bot.py", "role_data.py" a "requirments.txt"
 2. Zapnete si terminal a stáhenete si requirtments ( je to nutné stáhnout protože čistý python tohle nedokáže spustit sám discord bota logicky...)
@@ -39,6 +41,21 @@ Komandy :
 Minihra:
 !cislo ( uhodni čislo od 1-5, toto jsem vytvořil protože proč ne xD) 
 
+Jak probíhá hra: 
+
+Sežeň kamarády ( minimálně 5 + ty )
+
+Zapni hru ( !start) 
+
+Všem hráčům přijde zpráva co jsou 
+
+Tobě příjde do zprávy Grimoire ( seznam všech ), zjisti kdo potřebuje další informace ke svojí roli 
+
+Poté zavolej !den všichni se proberou a můžeš vyslat všechny na !volno 
+
+po volnu může začít hlasování, hlasuje se že když někdo chce někoho vyhodit tak musí říct že ho chce vyhodit a důvod potom ten který má být vyhozený řekně obhajobu, po obhajobě žačne hlasování, pokud dostane člověk dostane 50% a více hlasů tak je vyhozen, ale pokud tu bude druhé hlasování a ten druhý člověk dostane více hlasů jak ten první, je vyhozen on ( pozor: duch může taky hlasovat ale pouze jednou od smrti ) 
+
+a takhle se to opakuje dokud nevyhraje jeden z týmů 
 
 
 

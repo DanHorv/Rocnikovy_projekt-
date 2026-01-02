@@ -10,7 +10,7 @@ smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více p
 Celý kód by měl být blbuvzdorný takže by bot nikdy neměl spadnout 
 
 How to start:
-1. Je potřeba si stáhnout "bot.py", "role_data.py" a "requirments.txt"
+1. Je potřeba si stáhnout "bot.py" (zde je celý bot) , "role_data.py" (zde jsou uložený role a rozdělí postav podle počtu)a "requirments.txt" ( bez tohohle by to nefungovalo ) 
 2. Zapnete si terminal a stáhenete si requirtments ( je to nutné stáhnout protože čistý python tohle nedokáže spustit sám discord bota logicky...)
 3. Vytvoříte si Soubor ".env" a dáte tam "DISCORD_TOKEN=(Zde zadáte svůj discord token)"
 3.1 Pokud ještě nemáte discord bot token, zajdětě na stranku, https://discord.com/developers/, kde se přihlásíte a vytvoříte bota. Poté mu nastavte intensions(co by měl být schopný dělat), já jsem tam nastavil všechno aby mi to 100% fungovalo, a zadat permice které si role bota bude vyžadovat na serveru, osobně jsem zadal administratorské aby vše fungovalo abych to případně v budoucnu nemusel upravovat.

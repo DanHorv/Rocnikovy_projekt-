@@ -11,6 +11,9 @@ smysl hry je v podstatě vylepšené mestečko palermo s více pravidly, více p
 
 zdroje: 
 Nápad jsem ukradl kamarádovi který vytvořil podobnou verzi tohoto bota, Dík Frankie xD
+
 GEMINI
+
 https://discordpy.readthedocs.io/en/stable/#
+
 https://youtu.be/YD_N6Ffoojw?si=WwVKyvwSi3MbxN8j

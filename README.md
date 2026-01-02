@@ -15,9 +15,9 @@ How to start:
 3. Vytvoříte si Soubor ".env" a dáte tam "DISCORD_TOKEN=(Zde zadáte svůj discord token)"
 
 3.1 Pokud ještě nemáte discord bot token, zajdětě na stranku, https://discord.com/developers/, kde se přihlásíte a vytvoříte bota. Poté mu nastavte intensions(co by měl být schopný dělat), já jsem tam nastavil všechno aby mi to 100% fungovalo, a zadat permice které si role bota bude vyžadovat na serveru, osobně jsem zadal administratorské aby vše fungovalo abych to případně v budoucnu nemusel upravovat.
-5. pozvětě bota na svůj Discord server
+4. pozvětě bota na svůj Discord server
 
-6. Připravte si svůj Discord server
+5. Připravte si svůj Discord server
   5.1 Co je potřeba:
    
    1x Hlavní Channel, v základu je pojmenovanej "Náměstí" ale to kdyžtak jde upravovat ( řádek 24 )

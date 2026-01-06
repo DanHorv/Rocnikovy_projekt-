@@ -27,7 +27,7 @@ game_state = {
     "players": [],
     "house_channels": {},
 }
-
+#komand na přidání role 
 @bot.command(name="role")
 async def role(ctx):
     member = ctx.author
@@ -47,7 +47,7 @@ async def role(ctx):
             await ctx.send(f"Role **{role_nazev}** byla přidělena.")
     except discord.Forbidden:
         await ctx.send(f"Chyba: Nemám oprávnění spravovat roli {role_nazev}.")
-
+#kontrola jestli je vypravěč
 def je_vypravec():
     async def predicate(ctx):
         st_role = discord.utils.get(ctx.author.roles, name="Storyteller")
@@ -57,33 +57,33 @@ def je_vypravec():
         return True
 
     return commands.check(predicate)
-
+#do konzile se mi vypíše že bot jede 
 @bot.event
 async def on_ready():
     print(f'Bot {bot.user} je online a připraven!')
-
+#hlavní fungování bota 
 @bot.command(name="starthry", aliases=["startgame", "start"])
 async def start_hry(ctx):
     main_vc = discord.utils.get(ctx.guild.voice_channels, name=HLAVNI_KANAL_NAZEV)
     if not main_vc:
         await ctx.send(f"Chyba: Nemohu najít hlasový kanál s názvem `{HLAVNI_KANAL_NAZEV}`.")
         return
-
+#chekování hráčů v main channelu
     players_in_game = [m for m in main_vc.members if m != ctx.author and not m.bot]
     player_count = len(players_in_game)
     game_state["players"] = players_in_game
-
+#min 5 hráčů
     if player_count < 5:
         await ctx.send(f"Chyba: Pro hru je potřeba alespoň 5 hráčů (v kanálu je {player_count}).")
         return
-
+#druha kontrola počtu hráčů, check jestli to sedí podle rozdělení postav a rozdělení počtu postav 
     setup_counts = NASTAVENI_PODLE_HRACU.get(player_count)
     if not setup_counts:
         await ctx.send(f"**Chyba!** Počet hráčů ({player_count}) není podporován (podporujeme 5-15).")
         return
 
     tf_count, out_count, min_count, dem_count = setup_counts
-
+#gamba na postavy 
     try:
         townsfolk_list = random.sample(ROCNIK_TROUBLE_BREWING["townsfolk"], tf_count)
         outsiders_list = random.sample(ROCNIK_TROUBLE_BREWING["outsiders"], out_count)
@@ -93,7 +93,7 @@ async def start_hry(ctx):
         await ctx.send(
             f"**Chyba při sestavování rolí!** Pravděpodobně nemám v `role_data.py` dostatek unikátních rolí pro tento počet hráčů. Chyba: {e}")
         return
-
+#funkčnost postavy opilec 
     drunk_token = None
 
     if "Opilec" in outsiders_list:
@@ -140,7 +140,7 @@ async def start_hry(ctx):
             f"Tvoje role je: **{role_to_send_player}**\n"
             f"Popis role: {popis_role}\n"
         )
-
+#rozesílání DMs a přesouvání lidi do private chanelu
         try:
             await player.send(dm_message)
         except discord.Forbidden:
@@ -175,7 +175,7 @@ async def start_hry(ctx):
 
     await ctx.send(f"Všichni hráči ({player_count}) byli přesunuti. Dobrou noc.")
 
-
+#prěsune všechny hráče do vlastní roomky
 @bot.command(name="noc")
 @je_vypravec()
 async def noc(ctx):
@@ -208,6 +208,7 @@ async def noc(ctx):
                 name=f"🏡 Dům - {player_member.display_name}",
                 category=category
             )
+            #permice na připojování na channelů domů 
             await house_vc.set_permissions(player_member, connect=True, speak=True, view_channel=True)
             await house_vc.set_permissions(ctx.guild.default_role, connect=False, view_channel=False)
             await house_vc.set_permissions(ctx.author, connect=True, speak=True, view_channel=True)
@@ -225,7 +226,7 @@ async def noc(ctx):
 
     await ctx.send(f"Všichni hráči ({player_count}) byli přesunuti. Dobrou noc.")
 
-
+#přesunutí všech zpět do hlavního channelu
 @bot.command(name="den", aliases=["konecnoci", "day"])
 @je_vypravec()
 async def den(ctx):
@@ -262,7 +263,7 @@ async def den(ctx):
 
     await ctx.send("✅ Všichni hráči jsou zpět na Náměstí. **Den začíná.**")
 
-
+#kód který začne odpočítávat a po určitém čase zpět do main channelu
 @bot.command(name="volno")
 @je_vypravec()
 async def volno(ctx, seconds: int):
@@ -300,7 +301,7 @@ async def volno(ctx, seconds: int):
 
     await ctx.send(f"✅ Všichni hráči ({recalled_count} přesunuto) jsou zpět v `{HLAVNI_KANAL_NAZEV}`. Hra pokračuje.")
 
-
+#offline rezim, rozdělení rolí ale pošle se pouze grimoire ST do DM
 @bot.command(name="offline")
 @je_vypravec()
 async def offline_rozpis(ctx, player_count: int):
@@ -366,7 +367,7 @@ async def offline_rozpis(ctx, player_count: int):
         await ctx.send(f"Chyba při posílání DM s rozpisem: {e}")
 
 
-
+#minihra: uhodni číslo od 1-5
 @bot.command(name="cislo")
 async def command_cislo(ctx):
     spravne_cislo = random.randint(1, 5)
@@ -389,5 +390,5 @@ async def command_cislo(ctx):
         await ctx.send(f"špatně, číslo bylo {spravne_cislo}")
 
 
-
+#spouštění bota 
 bot.run(token)

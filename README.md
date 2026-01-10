@@ -70,10 +70,10 @@ zdroje:
 
 Nápad jsem ukradl kamarádovi který vytvořil podobnou verzi tohoto bota, Dík Frankie xD
 
-GEMINI
+AI Model: GOOGLE. Gemini [Velký jazykový model]. 2025 [cit. 2025-05-22]. Dostupné z: https://gemini.google.com/
 
-RAPPTZ. discord.py documentation [online]. [cit. 2025-05-22]. Dostupné z: https://discordpy.readthedocs.io/en/stable/
+Dokumentace: RAPPTZ. discord.py documentation [online]. [cit. 2025-05-22]. Dostupné z: https://discordpy.readthedocs.io/en/stable/
 
 
-TECH WITH TIM. How to Build a Discord Bot With Python - Full Tutorial 2025+ [online video]. 22. dubna 2025 [cit. 2025-05-22]. Dostupné z: https://www.youtube.com/watch?v=YD_N6Ff
+Video tutoriál: TECH WITH TIM. How to Build a Discord Bot With Python - Full Tutorial 2025+ [Video online]. YouTube, 22. 4. 2025 [cit. 2025-05-22]. Dostupné z: https://www.youtube.com/watch?v=YD_N6Ffoojw
 

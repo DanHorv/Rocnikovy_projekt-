@@ -31,6 +31,7 @@ How to start:
   6.2 Optional věci
    
    Popsat do nějaké roomky pravidla a role ať lidi vědí co každá postava dělá 
+
 7. Teď už stačí zapnout Bota a sehnat kamarády :D
 
 Komandy : 

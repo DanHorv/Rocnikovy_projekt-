@@ -21,11 +21,13 @@ How to start:
 5. pozvětě bota na svůj Discord server
 
 6. Připravte si svůj Discord server
+ 
   6.1 Co je potřeba:
    
    1x Hlavní Channel, v základu je pojmenovanej "Náměstí" ale to kdyžtak jde upravovat ( řádek 24 )
    Vytvořit roli "Storyteller"
    Pár vedlejších roomek aby se lidi mohli rozejít při dnu aby mohli zjistit informace ( počet podle vašeho uvážení )
+ 
   6.2 Optional věci
    
    Popsat do nějaké roomky pravidla a role ať lidi vědí co každá postava dělá 
